@@ -5,7 +5,7 @@
  */
 
 /**
- * print_pointer - * variable printing
+ * print_pointer - * variable printing for the project
  * @types: arg list
  * @buffer: Buffer [] to handle printing
  * @flags:  calcs active flags
