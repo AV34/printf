@@ -15,10 +15,10 @@ int is_printable(char c)
 
 /**
  * append_hexa_code - This append ASCCI in hex code to buffer
- * @buffer: [] of chars.
- * @i: This is the Index at which to start apped.
- * @ascii_code: ASSCI CODE.
- * Return: 3
+ * @buffer: [] of chars output
+ * @i: This is the Index at which to start apped
+ * @ascii_code: ASSCI CODE
+ * Return: (3)
  */
 int append_hexa_code(char ascii_code, char buffer[], int i)
 {
