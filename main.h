@@ -45,8 +45,8 @@ struct fmt
 typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
-int handle_print(const char *fmt, int *i,
-va_list list, char buffer[], int flags, int width, int precision, int size);
+int getprint_handler(const char *fmt, int *i,
+va_list args_list, char buffer[], int flags, int width, int precision, int size);
 
 /**
  * This is Functions section
@@ -62,7 +62,7 @@ va_list list, char buffer[], int flags, int width, int precision, int size);
 
 int print_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
-int print_string(va_list types, char buffer[],
+int print_str(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int print_percent(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
@@ -103,12 +103,12 @@ int print_non_printable(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
 /**
- * Funcs for haddling others specifiers
+ * Funcs for handling others specifiers
  */
 
 int get_flags(const char *format, int *i);
-int get_width(const char *format, int *i, va_list list);
-int get_precision(const char *format, int *i, va_list list);
+int get_width(const char *format, int *i, va_list args_list);
+int get_precision(const char *format, int *i, va_list args_list);
 int get_size(const char *format, int *i);
 
 /**
@@ -141,16 +141,16 @@ int flags, int width, int precision, int size);
  * @buffer: buffer
  */
 
-int handle_write_char(char c, char buffer[],
+int write_char(char c, char buffer[],
 int flags, int width, int precision, int size);
-int write_number(int is_positive, int ind, char buffer[],
+int write_number(int is_positive, int index, char buffer[],
 int flags, int width, int precision, int size);
-int write_num(int ind, char bff[], int flags, int width, int precision,
-int length, char padd, char extra_c);
-int write_pointer(char buffer[], int ind, int length,
-int width, int flags, char padd, char extra_c, int padd_start);
+int write_num(int index, char buffer[], int flags, int width, int precision,
+int length, char padding, char extra_c);
+int write_pointer(char buffer[], int index, int length,
+int width, int flags, char padding, char extra_c, int padding_start);
 
-int write_unsgnd(int is_negative, int ind,
+int write_unsgnd(int is_negative, int index,
 char buffer[],
 	int flags, int width, int precision, int size);
 
