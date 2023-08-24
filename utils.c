@@ -3,7 +3,7 @@
 /**
  * is_printable - This determin if a char is to be printed
  * @c: Char to be determin
- * Return: 1 for printale c, 0 otherwise
+ * Return: 1 for printable c, 0 otherwise
  */
 int is_printable(char c)
 {
@@ -14,10 +14,10 @@ int is_printable(char c)
 }
 
 /**
- * append_hexa_code - This append ASCCI in hex code to buffer
+ * append_hexa_code - This append ASCII in hex code to buffer
  * @buffer: [] of chars output
  * @i: This is the Index at which to start apped
- * @ascii_code: ASSCI CODE
+ * @ascii_code: ASCII CODE
  * Return: (3)
  */
 int append_hexa_code(char ascii_code, char buffer[], int i)
