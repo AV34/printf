@@ -2,7 +2,7 @@
 
 /**
  * get_width - This calcs the width print
- * @format: format
+ * @format: format for the code
  * @i: arg list for printing
  * @list: arg list
  * Return: width
