@@ -13,7 +13,7 @@
  * @size: size
  * Return: num of char printed
  */
-int print_string(va_list types, char buffer[],
+int print_str(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int length = 0, i;
