@@ -1,9 +1,19 @@
 #include "main.h"
 
 /**
+<<<<<<< HEAD
  * write_char - function to print character
  * @c: character
  * @buffer: Buffer []
+=======
+ * Handling write for the program
+ */
+
+/**
+ * handle_write_char - str printing
+ * @c: char
+ * @buffer: Buffer [] to handle printing
+>>>>>>> 2d7e64ddceefaabe018350bf9673afed38fdab71
  * @flags:  calcs flags active
  * @width: width
  * @precision: precision

@@ -2,7 +2,7 @@
 
 /**
  * get_precision - This calcs the precision use for printing
- * @format: format
+ * @format: format used on the code 
  * @i: agr list to be printed
  * @args_list: arg list
  * Return: Precision
