@@ -5,7 +5,7 @@
  */
 
 /**
- * print_char - char printing
+ * print_char - char printing for the project
  * @types: arg listing
  * @buffer: A buffer [] to handle printing
  * @flags:  calc active flags
