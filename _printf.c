@@ -3,7 +3,7 @@
 void print_buffer(char buffer[], int *buff_ind);
 
 /**
- * _printf - This is the Printf func
+ * _printf - This is the Printf func for Alx
  * @format: format
  * Return: Printed chars output
  */
