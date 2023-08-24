@@ -1,7 +1,7 @@
 #ifndef MAIN_H_
 #define MAIN_H_
-#include <stdio.h>
 #include <unistd.h>
+#include <stdio.h>
 #include <stdarg.h>
 
 #define UNUSED(x) (void)(x)
