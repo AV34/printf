@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * Handling write
+ * Handling write for the program
  */
 
 /**
