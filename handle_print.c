@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * handle_print - This prints an arg dependent on its type
- * @fmt: format
+ * @fmt: format of the printf
  * @list: arg list for printing
- * @ind: ind
+ * @ind: ind used
  * @buffer: Buffer [] to handle printing
  * @flags: calcs active flags
  * @width: width
