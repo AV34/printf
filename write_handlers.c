@@ -154,9 +154,8 @@ int write_num(int index, char buffer[],
  * @size: Size
  * Return: num chars written
  */
-int write_unsgnd(int is_negative, int index,
-	char buffer[],
-	int flags, int width, int precision, int size)
+int write_unsgnd(int is_negative, int index, char buffer[],
+		int flags, int width, int precision, int size)
 {
 	int length = BUFF_SIZE - index - 1, i = 0;
 	char padding = ' ';
