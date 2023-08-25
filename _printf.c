@@ -10,13 +10,13 @@ void print_buffer(char buffer[], int *buff_index);
 int _printf(const char *format, ...)
 {
 	int i, print_char = 0, print_chars = 0;
-	int flags, precision, size, width, buff_index = 0;
+	int flags, width, precision, size, buff_index = 0;
 	va_list args_list;
 	char buffer[BUFF_SIZE];
-	
+
 	if (format == NULL)
 		return (-1);
-	
+
 	va_start(args_list, format);
 
 	for (i = 0; format && format[i] != '\0'; i++)

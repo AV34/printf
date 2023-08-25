@@ -77,17 +77,17 @@ int print_percent(va_list types, char buffer[],
  */
 
 int print_int(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int print_binary(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int print_unsigned(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int print_octal(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int print_hexadecimal(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int print_hexa_upper(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int print_hex(va_list types, char map_to[], char buffer[],
 		int flags, char flag_ch, int width, int precision, int size);
 
@@ -100,7 +100,7 @@ int print_hex(va_list types, char map_to[], char buffer[],
  */
 
 int print_non_printable(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 
 /**
  * Funcs for handling others specifiers
@@ -116,21 +116,21 @@ int get_size(const char *format, int *i);
  */
 
 int print_pointer(va_list types, char buffer[],
-int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 
 /**
  * Funcs for printing str in rot 13
  */
 
 int print_rot13string(va_list types, char buffer[],
-int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 
 /**
  * Funcs for printing str in reverse
  */
 
 int print_reverse(va_list types, char buffer[],
-int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 
 /**
  * Section of width handlers
@@ -142,17 +142,16 @@ int flags, int width, int precision, int size);
  */
 
 int write_char(char c, char buffer[],
-int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int write_number(int is_positive, int index, char buffer[],
-int flags, int width, int precision, int size);
-int write_num(int index, char buffer[], int flags, int width, int precision,
-int length, char padding, char extra_c);
+		int flags, int width, int precision, int size);
+int write_num(int index, char buffer[], int flags, int width,
+		int precision, int length, char padding, char extra_c);
 int write_pointer(char buffer[], int index, int length,
-int width, int flags, char padding, char extra_c, int padding_start);
+		int width, int flags, char padding, char extra_c, int padding_start);
 
-int write_unsgnd(int is_negative, int index,
-char buffer[],
-	int flags, int width, int precision, int size);
+int write_unsgnd(int is_negative, int index, char buffer[],
+		int flags, int width, int precision, int size);
 
 /**
  * Section of Utils handlers
