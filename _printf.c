@@ -43,11 +43,9 @@ int _printf(const char *format, ...)
 			print_chars += print_char;
 		}
 	}
-
 	print_buffer(buffer, &buff_index);
 
 	va_end(args_list);
-
 	return (print_chars);
 }
 

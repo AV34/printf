@@ -4,7 +4,7 @@
  * get_size - This calcs the size for casting the arg
  * @format: format
  * @i: arg list for printing
- * Return: Precision
+ * Return: size
  */
 int get_size(const char *format, int *i)
 {
