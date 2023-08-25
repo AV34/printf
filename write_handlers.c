@@ -10,7 +10,7 @@
  */
 
 /**
- * handle_write_char - str printing
+ * write_char - str printing
  * @c: char
  * @buffer: Buffer [] to handle printing
 >>>>>>> 2d7e64ddceefaabe018350bf9673afed38fdab71

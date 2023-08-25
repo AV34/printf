@@ -39,7 +39,7 @@ struct fmt
 /**
  * typedef struct fmt fmt_t - This is for Struct
  * @fmt: format specifiers
- * @fm_t: This is for func
+ * @fmt_t: This is for func
  */
 
 typedef struct fmt fmt_t;
